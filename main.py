@@ -16,12 +16,11 @@ from translator import tarjima
 logging.basicConfig(level=logging.INFO)
 
 
-PROXY_URL = "http://proxy.server:3128"
-session = AiohttpSession(proxy=PROXY_URL)
+
 TOKEN = "7931118218:AAFzu-5fAnXVQoQGwBGT7tgdsgZ8K_S9hJo"
 ADMIN_ID = 2001870098
 
-bot = Bot(token=TOKEN,session=session)
+bot = Bot(token=TOKEN,)
 dp = Dispatcher()
 
 user_data = {}
